@@ -1,3 +1,3 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿global using static AdventOfCode.Config;
 
-Console.WriteLine("Hello, World!");
+AocRunner.Run(2021, 1);

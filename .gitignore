@@ -1,3 +1,7 @@
 .idea
 */obj/
 */bin/
+.directory
+*/.directory
+*/Inputs/
+*/token
