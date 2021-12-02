@@ -1,6 +1,6 @@
 namespace AdventOfCode.Solutions._2021;
 
-public class Day1: ASolution
+public class Day01: ASolution
 {
     public override object Part1()
     {

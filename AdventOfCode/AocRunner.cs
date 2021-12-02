@@ -45,7 +45,7 @@ public class AocRunner
         var solution = Assembly.GetExecutingAssembly().GetTypes()
             .Where(x => !x.IsAbstract && x.IsAssignableTo(typeof(ASolution)))
             .Where(x => x.Namespace.EndsWith(year.ToString()))
-            .First(x => x.Name.Equals($"Day{day}"));
+            .First(x => x.Name.Equals($"Day{day:00}"));
 
         return (ASolution) Activator.CreateInstance(solution);
     }

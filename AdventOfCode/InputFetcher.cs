@@ -40,7 +40,7 @@ public static class InputFetcher
 
         return File.ReadAllLines(path);
     }
-    
+
     private static string BuildFilename(int year, int day)
     {
         return Path.Combine(BasePath, "Inputs", $"{year}-{day:00}.txt");
