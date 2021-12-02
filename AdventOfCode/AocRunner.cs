@@ -28,16 +28,30 @@ public class AocRunner
     {
         Console.WriteLine("Part 1:");
         var st = Stopwatch.StartNew();
-        Console.WriteLine(solution.Part1());
-        Console.WriteLine($"In {st.ElapsedMilliseconds} ms ({st.ElapsedTicks}) ticks");
+        try
+        {
+            Console.WriteLine(solution.Part1());
+            Console.WriteLine($"In {st.ElapsedMilliseconds} ms ({st.ElapsedTicks}) ticks");
+        }
+        catch (NotImplementedException e)
+        {
+            Console.WriteLine("Not implemented");
+        }
     }
     
     private static void RunPart2(ASolution solution)
     {
         Console.WriteLine("Part 2:");
         var st = Stopwatch.StartNew();
-        Console.WriteLine(solution.Part2());
-        Console.WriteLine($"In {st.ElapsedMilliseconds} ms ({st.ElapsedTicks}) ticks");
+        try
+        {
+            Console.WriteLine(solution.Part2());
+            Console.WriteLine($"In {st.ElapsedMilliseconds} ms ({st.ElapsedTicks}) ticks");
+        }
+        catch (NotImplementedException e)
+        {
+            Console.WriteLine("Not implemented");
+        }
     }
 
     private static ASolution GetSolution(int year, int day)
