@@ -41,13 +41,9 @@ public class Day05: ASolution
         for (var i = 0; i <= count; i++)
         {
             var point = new Point(start.X + i * xAdjust, start.Y + i * yAdjust);
-            if (grid.ContainsKey(point))
+            if (!grid.TryAdd(point, 1))
             {
                 grid[point]++;
-            }
-            else
-            {
-                grid.Add(point, 1);
             }
         }
     }
